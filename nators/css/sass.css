@@ -52,8 +52,8 @@ nav::after {
   border-radius: 100px;
   text-decoration: none;
   text-transform: uppercase;
-  width: 150px;
   color: #eee;
+  width: 150px;
 }
 
 .btn-main:link {
