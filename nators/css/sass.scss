@@ -24,8 +24,12 @@ $color-text-light: #eee;
     color: $color;
 }
 
+@function divide($a, $b){
+    @return $a / $b;
+}
+
 nav{
-    margin: 30px;
+    margin: divide(60, 2) * 1px;
     background-color: $color-primary;
     @include clearfix();
 }
@@ -67,8 +71,8 @@ nav{
     display: inline-block;
     text-align: center;
     border-radius: 100px;
-    @include style-link-text($color-text-light);
     width: $width-btn;
+    @include style-link-text($color-text-light);
 }
 
 .btn-main{
