@@ -1,0 +1,8 @@
+{
+  "name": "nators",
+  "version": "1.0.0",
+  "description": "A fictional tour company\"",
+  "main": "index.js",
+  "author": "krypton",
+  "license": "MIT"
+}
