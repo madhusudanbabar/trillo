@@ -1,7 +1,6 @@
 .row{
     // standard width for grid used now days is 1140 rem and thus converting it to rem
     max-width: $grid-width;
-    background-color: #eee;
     margin: 0 auto;
     margin-bottom: $gutter-vertical;
 
@@ -12,7 +11,6 @@
     @include clearfix;
 
     [class^="col-"]{
-        background-color: orangered;
         float: left;
         &:not(:last-child){
             margin-right: $gutter-horizantal;
