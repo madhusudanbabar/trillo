@@ -14,4 +14,7 @@
 12. in order to use position absolute parent element must be have position defined.
 13. column-* properties: column-gap, column-rule, column-count;
 14. hyphens needs document language to defined.
-15. autoprefixer for browser support 
+15. autoprefixer for browser support.
+16. ```display:none``` doesn't supports animation. \
+use ```opacity: 0;``` ```visibility: hidden;``` instead.
+17. target pseudo class gets attached to the element of window.location.href
