@@ -12,3 +12,6 @@
 10. -webkit-input-placeholder
 11. :placeholder-shown 
 12. in order to use position absolute parent element must be have position defined.
+13. column-* properties: column-gap, column-rule, column-count;
+14. hyphens needs document language to defined.
+15. autoprefixer for browser support 
