@@ -11,3 +11,4 @@
 9. adjascent sibling +
 10. -webkit-input-placeholder
 11. :placeholder-shown 
+12. in order to use position absolute parent element must be have position defined.
