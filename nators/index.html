@@ -14,21 +14,36 @@
   </head>
   <body>
     <div class="navigation">
-      <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-      <label for="navi-toggle" class="navigation__button">MENU</label>
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon"></span>
+      </label>
       <div class="navigation__background">&nbsp;</div>
 
       <nav class="navigation__nav">
         <ul class="navigation__list">
-          <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span> natours</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Your benefits</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Popular tours</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Stories</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Book now</a></li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>01</span> natours</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span>02</span>Your benefits</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span>03</span>Popular tours</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>04</span>Stories</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>05</span>Book now</a>
+          </li>
         </ul>
       </nav>
     </div>
-
 
     <header class="header">
       <div class="header__logo-box">
@@ -268,12 +283,11 @@
       </section>
 
       <section class="section-stories">
-
         <div class="bg-video">
           <video class="bg-video__content" autoplay muted loop>
-            <source src="img/video.mp4" type="video/mp4">
-            <source src="img/video.webm" type="video/webm">
-              your browser is not supported
+            <source src="img/video.mp4" type="video/mp4" />
+            <source src="img/video.webm" type="video/webm" />
+            your browser is not supported
           </video>
         </div>
         <div class="u-center-text u-margin-bottom-big">
@@ -285,7 +299,11 @@
         <div class="row">
           <div class="story">
             <figure class="story__shape">
-              <img src="img/nat-8.jpg" alt="Person on a tour" class="story__img">
+              <img
+                src="img/nat-8.jpg"
+                alt="Person on a tour"
+                class="story__img"
+              />
               <figcaption class="story__caption">Mary Smith</figcaption>
             </figure>
             <div class="story__text">
@@ -295,9 +313,9 @@
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
                 ab iure, at placeat velit totam esse aut voluptas, voluptate
-                autem, quidem dolor debitis placeat.Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                ab iure placeat velit totam esse aut voluptate
-                autem, quidem dolor debitis quam? Sit placeat.
+                autem, quidem dolor debitis placeat.Lorem, ipsum dolor sit amet
+                consectetur adipisicing elit. ab iure placeat velit totam esse
+                aut voluptate autem, quidem dolor debitis quam? Sit placeat.
               </p>
             </div>
           </div>
@@ -306,7 +324,11 @@
         <div class="row">
           <div class="story">
             <figure class="story__shape">
-              <img src="img/nat-9.jpg" alt="Person on a tour" class="story__img">
+              <img
+                src="img/nat-9.jpg"
+                alt="Person on a tour"
+                class="story__img"
+              />
               <figcaption class="story__caption">Jack Wilson</figcaption>
             </figure>
             <div class="story__text">
@@ -316,9 +338,9 @@
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
                 ab iure, at placeat velit totam esse aut voluptas, voluptate
-                autem, quidem dolor debitis placeat.Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                ab iure placeat velit totam esse aut voluptate
-                autem, quidem dolor debitis quam? Sit placeat.
+                autem, quidem dolor debitis placeat.Lorem, ipsum dolor sit amet
+                consectetur adipisicing elit. ab iure placeat velit totam esse
+                aut voluptate autem, quidem dolor debitis quam? Sit placeat.
               </p>
             </div>
           </div>
@@ -327,7 +349,6 @@
         <div class="u-center-text u-margin-top-huge">
           <a href="#" class="btn-text">Read all stories &rarr;</a>
         </div>
-
       </section>
 
       <section class="section-book">
@@ -341,18 +362,35 @@
                   </h2>
                 </div>
                 <div class="form__group">
-                  <input type="text" class="form__input" placeholder="Full Name" id="name" required>
+                  <input
+                    type="text"
+                    class="form__input"
+                    placeholder="Full Name"
+                    id="name"
+                    required
+                  />
                   <label class="form__label" for="name">Full name</label>
                 </div>
 
                 <div class="form__group">
-                  <input type="email" class="form__input" placeholder="Email address" id="email" required>
+                  <input
+                    type="email"
+                    class="form__input"
+                    placeholder="Email address"
+                    id="email"
+                    required
+                  />
                   <label class="form__label" for="email">Email address</label>
                 </div>
 
                 <div class="form__group u-margin-bottom-medium">
                   <div class="form__radio-group">
-                    <input type="radio" class="form__radio-input" id="small" name="size">
+                    <input
+                      type="radio"
+                      class="form__radio-input"
+                      id="small"
+                      name="size"
+                    />
                     <label for="small" class="form__radio-label">
                       <span class="form__radio-button"></span>
                       Small tour group
@@ -360,17 +398,21 @@
                   </div>
 
                   <div class="form__radio-group">
-                    <input type="radio" class="form__radio-input" id="large" name="size">
+                    <input
+                      type="radio"
+                      class="form__radio-input"
+                      id="large"
+                      name="size"
+                    />
                     <label for="large" class="form__radio-label">
                       <span class="form__radio-button"></span>
                       Large tour group
                     </label>
                   </div>
-
                 </div>
-                    <div class="form__group">
-                      <button class="btn btn--green">Next step &rarr;</button>
-                    </div>
+                <div class="form__group">
+                  <button class="btn btn--green">Next step &rarr;</button>
+                </div>
               </form>
             </div>
           </div>
@@ -380,29 +422,71 @@
 
     <footer class="footer">
       <div class="footer__logo-box">
-        <img src="img/logo-green-2x.png" alt="Natours" class="footer__logo">
+        <img src="img/logo-green-2x.png" alt="Natours" class="footer__logo" />
       </div>
       <div class="row">
         <div class="col-1-of-2">
           <div class="footer__navigation">
             <ul class="footer__list">
-              <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Careers</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Privacy policy</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Company</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Contact us</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Careers</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Privacy policy</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Terms</a>
+              </li>
             </ul>
           </div>
         </div>
         <div class="col-1-of-2">
           <p class="footer__copyright">
-            Built by <a href="#" class="footer__link">krypton</a> while learning an online course.
-            Copyright &copy; You are allowed to use this webpage for both personal and commercial use,
-            but not to claim it as your own design. A credit to original author, Jonas scmedtmann!
+            Built by <a href="#" class="footer__link">krypton</a> while learning
+            an online course. Copyright &copy; You are allowed to use this
+            webpage for both personal and commercial use, but not to claim it as
+            your own design. A credit to original author, Jonas scmedtmann!
           </p>
         </div>
       </div>
     </footer>
+
+    <div class="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img" />
+          <img
+            src="img/nat-9.jpg"
+            alt="Another tour photo"
+            class="popup__img"
+          />
+        </div>
+        <div class="popup__right">
+          <h2 class="heading-secondary u-margin-bottom-medium">Start booking now</h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            Important &ndash;Please read these terms before booking
+          </h3>
+          <p class="popup__text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum
+            quo commodi quos quia excepturi, iure delectus. Quibusdam repellat,
+            voluptatibus ducimus numquam earum aut repellendus unde accusamus
+            distinctio, assumenda facere at?  iure delectus. Quibusdam repellat,
+            voluptatibus ducimus numquam earum aut repellendus unde accusamus
+            distinctio, assumenda facere at? aut repellendus unde accusamus
+            distinctio, assumenda facere at? iure delectus.aut repellendus unde accusamus
+            distinctio, assumenda facere at? aut repellendus unde accusamus
+            distinctio, assumenda facere at? iure delectus.
+          </p>
+          <a href="#" class="btn btn--green">Book now</a>
+        </div>
+      </div>
+    </div>
 
     <!-- 
         <section class="grid-test">
