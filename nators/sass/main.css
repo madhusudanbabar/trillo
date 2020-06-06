@@ -133,7 +133,7 @@ html {
 
 @media (max-width: 37.5em) {
   html {
-    font-size: 30%;
+    font-size: 35%;
   }
 }
 
@@ -1424,6 +1424,12 @@ body {
 @media (max-width: 56.2em) {
   .section-about {
     padding: 20rem 0;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .section-about {
+    margin-top: -10vh;
   }
 }
 
