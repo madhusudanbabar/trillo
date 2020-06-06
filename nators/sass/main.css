@@ -1,3 +1,12 @@
+/* $breakpoint arguments are 
+phone
+tab-port
+tab-land
+big-desktop
+*/
+/* we are using em instead of pixels to let users give the freedom of setting default browser font size
+and our queries will adopt with that, else if we use pxels then it won't change with users font size.
+*/
 @-webkit-keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -14,7 +23,6 @@
             transform: translate(0);
   }
 }
-
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -103,6 +111,30 @@
 
 html {
   font-size: 62.5%;
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 56.2em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media (max-width: 37.5em) {
+  html {
+    font-size: 30%;
+  }
 }
 
 body {
