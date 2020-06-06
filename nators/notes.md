@@ -17,4 +17,8 @@
 15. autoprefixer for browser support.
 16. ```display:none``` doesn't supports animation. \
 use ```opacity: 0;``` ```visibility: hidden;``` instead.
-17. target pseudo class gets attached to the element of window.location.href
+17. target pseudo class gets attached to the element of window.location.href.
+18. ```min-width```: mobile first & ```max-width```: desktop first.
+19. for specificity purposes we write media queries at last.
+20. order of media queries matters a lot.
+21. ORDER: base + typography > general layout + grid > page layout > components
