@@ -892,6 +892,13 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
 }
 
+@media (max-width: 37.5em) {
+  .header {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 85vh, 0% 100%);
+  }
+}
+
 .header__logo-box {
   position: absolute;
   top: 4rem;
@@ -990,6 +997,20 @@ body {
   cursor: pointer;
 }
 
+@media (max-width: 56.2em) {
+  .navigation__button {
+    top: 4rem;
+    right: 4rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .navigation__button {
+    top: 2rem;
+    right: 2rem;
+  }
+}
+
 .navigation__background {
   height: 6rem;
   width: 6rem;
@@ -1003,6 +1024,20 @@ body {
   transition: -webkit-transform 0.75s cubic-bezier(0.86, 0, 0.07, 1);
   transition: transform 0.75s cubic-bezier(0.86, 0, 0.07, 1);
   transition: transform 0.75s cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 0.75s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+@media (max-width: 56.2em) {
+  .navigation__background {
+    top: 4.5rem;
+    right: 4.5rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .navigation__background {
+    top: 2.5rem;
+    right: 2.5rem;
+  }
 }
 
 .navigation__nav {
@@ -1130,6 +1165,18 @@ body {
   margin-bottom: 8rem;
 }
 
+@media (max-width: 56.2em) {
+  .row:not(:last-child) {
+    margin-bottom: 6rem;
+  }
+}
+
+@media (max-width: 56.2em) {
+  .row {
+    max-width: 50rem;
+  }
+}
+
 .row::after {
   content: "";
   display: table;
@@ -1142,6 +1189,19 @@ body {
 
 .row [class^="col-"]:not(:last-child) {
   margin-right: 6rem;
+}
+
+@media (max-width: 56.2em) {
+  .row [class^="col-"]:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 6rem;
+  }
+}
+
+@media (max-width: 56.2em) {
+  .row [class^="col-"] {
+    width: 100% !important;
+  }
 }
 
 .row .col-1-of-2 {
