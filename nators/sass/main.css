@@ -525,8 +525,8 @@ body {
 .card__side {
   font-size: 2rem;
   height: 52rem;
-  -webkit-transition: all .8s ease;
-  transition: all .8s ease;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
   position: absolute;
   top: 0;
   left: 0;
@@ -670,6 +670,55 @@ body {
 .card__price-value {
   font-size: 6rem;
   font-weight: 100;
+}
+
+@media (max-width: 56.2em) {
+  .card {
+    background-color: #fff;
+    border-radius: 3px;
+    height: auto;
+    -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+            box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  }
+  .card__side {
+    height: auto;
+    position: relative;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .card__side--back {
+    background-color: green;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+  }
+  .card:hover .card__side--front {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  .card__details {
+    padding: 1rem 3rem;
+  }
+  .card__cta {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    text-align: center;
+    padding: 7rem 4rem 4rem 4rem;
+  }
+  .card__price-box {
+    margin-bottom: 8rem;
+  }
+  .card__price-only {
+    font-size: 1.4rem;
+  }
+  .card__price-value {
+    font-size: 6rem;
+  }
 }
 
 .story {
