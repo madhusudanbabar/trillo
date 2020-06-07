@@ -456,16 +456,15 @@ body {
           transform: scale(1.05) translateY(-0.5rem);
   -webkit-box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
           box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
-  z-index: 9;
+  z-index: 199;
   outline: #7ed56f 1.5rem solid;
   outline-offset: 2rem;
 }
 
 @media (max-width: 56.2em) {
   .composition__photo:hover {
-    z-index: 199;
     outline: #7ed56f 0.5rem solid;
-    outline-offset: 1rem;
+    outline-offset: .5rem;
   }
 }
 
