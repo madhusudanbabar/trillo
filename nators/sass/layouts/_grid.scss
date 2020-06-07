@@ -13,8 +13,9 @@
     }
 
     @include respond(tab-port){
-        max-width: 50rem;
+        max-width: initial;
         padding: 0 3rem;
+        margin: 0 10rem;
     }
 
     @include clearfix;
