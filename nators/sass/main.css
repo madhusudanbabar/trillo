@@ -975,6 +975,14 @@ body {
   visibility: hidden;
 }
 
+@supports ((-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px))) {
+  .popup {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
 .popup__content {
   position: absolute;
   top: 50%;
@@ -1106,10 +1114,10 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 600px), (min-resolution: 192dpi) and (min-width: 600px), (min-width: 2000px) {
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
   .header {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 119, 48, 0.8)), to(rgba(255, 119, 48, 0.8))), url("../img/hero.jpg");
-    background-image: linear-gradient(to right, rgba(255, 119, 48, 0.8), rgba(255, 119, 48, 0.8)), url("../img/hero.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(40, 180, 133, 0.8)), to(rgba(40, 180, 133, 0.8))), url("../img/hero.jpg");
+    background-image: linear-gradient(to right, rgba(40, 180, 133, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
   }
 }
 

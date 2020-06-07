@@ -25,4 +25,5 @@ use ```opacity: 0;``` ```visibility: hidden;``` instead.
 22. way to prevent overflow on parent element when a modal or popup is open.
 23. how to merge branches on github.
 24. **responsive images**
-- srcset 1x, 2x density descriptors
+- srcset 1x, 2x density descriptors.
+25. @supports queries and graceful degradation.
