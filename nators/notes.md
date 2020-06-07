@@ -21,4 +21,5 @@ use ```opacity: 0;``` ```visibility: hidden;``` instead.
 18. ```min-width```: mobile first & ```max-width```: desktop first.
 19. for specificity purposes we write media queries at last.
 20. order of media queries matters a lot.
-21. ORDER: base + typography > general layout + grid > page layout > components
+21. ORDER: base + typography > general layout + grid > page layout > components.
+22. way to prevent overflow on parent element when a modal or popup is open.
