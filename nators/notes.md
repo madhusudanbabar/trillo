@@ -27,3 +27,4 @@ use ```opacity: 0;``` ```visibility: hidden;``` instead.
 24. **responsive images**
 - srcset 1x, 2x density descriptors.
 25. @supports queries and graceful degradation.
+26. minification / compression creates great impact on file size.
