@@ -53,14 +53,13 @@
     &:hover{
         transform: scale(1.05) translateY(-.5rem);
         box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
-        z-index: 9;
+        z-index: 199;
         outline: $color-primary-light 1.5rem solid;
         outline-offset: 2rem;
 
         @include respond(tab-port){
-          z-index: 199;
           outline: $color-primary-light .5rem solid;
-          outline-offset: 1rem;
+          outline-offset: .5rem;
         }
     }
   }
