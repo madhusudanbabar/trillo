@@ -23,4 +23,6 @@ use ```opacity: 0;``` ```visibility: hidden;``` instead.
 20. order of media queries matters a lot.
 21. ORDER: base + typography > general layout + grid > page layout > components.
 22. way to prevent overflow on parent element when a modal or popup is open.
-23. how to merge branches on github
+23. how to merge branches on github.
+24. **responsive images**
+- srcset 1x, 2x density descriptors
