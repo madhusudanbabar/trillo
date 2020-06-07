@@ -512,6 +512,10 @@ body {
     body {
       padding: 0; } }
 
+::selection {
+  color: #fff;
+  background-color: #55c57a; }
+
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
