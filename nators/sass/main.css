@@ -489,6 +489,8 @@ body {
 
 @media (max-width: 56.2em) {
   .feature-box {
+    max-width: 50rem;
+    margin: 0 auto;
     padding: 2rem;
   }
 }
@@ -521,6 +523,13 @@ body {
   -moz-perspective: 150rem;
   position: relative;
   height: 52rem;
+}
+
+@media (max-width: 56.2em) {
+  .card {
+    max-width: 50rem;
+    margin: 0 auto;
+  }
 }
 
 .card__side {
@@ -1406,8 +1415,9 @@ body {
 
 @media (max-width: 56.2em) {
   .row {
-    max-width: 50rem;
+    max-width: initial;
     padding: 0 3rem;
+    margin: 0 10rem;
   }
 }
 
