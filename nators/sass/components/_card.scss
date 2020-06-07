@@ -5,6 +5,11 @@
   position: relative;
   height: 52rem;
 
+  @include respond(tab-port){
+    max-width: 50rem;
+    margin: 0 auto;
+  }
+
   &__side {
     // color: #fff;
     font-size: 2rem;
