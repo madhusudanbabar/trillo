@@ -133,7 +133,7 @@ html {
 
 @media (max-width: 37.5em) {
   html {
-    font-size: 35%;
+    font-size: 42%;
   }
 }
 
@@ -1234,6 +1234,7 @@ body {
   z-index: 1499;
   opacity: 0;
   width: 0;
+  overflow: hidden;
   -webkit-transition: all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transition: all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
@@ -1287,6 +1288,7 @@ body {
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
   width: 100%;
+  overflow: auto;
 }
 
 .navigation__icon {
