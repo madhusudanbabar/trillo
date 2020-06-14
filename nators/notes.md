@@ -28,3 +28,4 @@ use ```opacity: 0;``` ```visibility: hidden;``` instead.
 - srcset 1x, 2x density descriptors.
 25. @supports queries and graceful degradation.
 26. minification / compression creates great impact on file size.
+27. gtmetrix for website performance tests.
