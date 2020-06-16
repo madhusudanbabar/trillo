@@ -29,3 +29,11 @@ use ```opacity: 0;``` ```visibility: hidden;``` instead.
 25. @supports queries and graceful degradation.
 26. minification / compression creates great impact on file size.
 27. gtmetrix for website performance tests.
+
+# flexbox - trillo project
+
+28. ```justify-content``` - main-axis
+29. ```align-items``` - cross axis - default is stretch
+30. ```align-content``` - only applies when there are more than 1 rows
+31. default ```order``` is zero.
+32. default ```flex-shrink: 1``` hence element is allowed to shrink.
