@@ -37,3 +37,4 @@ use ```opacity: 0;``` ```visibility: hidden;``` instead.
 30. ```align-content``` - only applies when there are more than 1 rows
 31. default ```order``` is zero.
 32. default ```flex-shrink: 1``` hence element is allowed to shrink.
+33. flex containers can be nested.
