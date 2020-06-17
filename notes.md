@@ -38,3 +38,6 @@ use ```opacity: 0;``` ```visibility: hidden;``` instead.
 31. default ```order``` is zero.
 32. default ```flex-shrink: 1``` hence element is allowed to shrink.
 33. flex containers can be nested.
+34. sprite svg
+35. ``currentColor`` value is like inherit.
+36. ``z-index`` only works with position specified
