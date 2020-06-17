@@ -32,12 +32,14 @@ use ```opacity: 0;``` ```visibility: hidden;``` instead.
 
 # flexbox - trillo project
 
-28. ```justify-content``` - main-axis
-29. ```align-items``` - cross axis - default is stretch
-30. ```align-content``` - only applies when there are more than 1 rows
+28. ```justify-content``` - main-axis.
+29. ```align-items``` - cross axis - default is stretch.
+30. ```align-content``` - only applies when there are more than 1 rows.
 31. default ```order``` is zero.
 32. default ```flex-shrink: 1``` hence element is allowed to shrink.
 33. flex containers can be nested.
-34. sprite svg
+34. sprite svg.
 35. ``currentColor`` value is like inherit.
-36. ``z-index`` only works with position specified
+36. ``z-index`` only works with position specified.
+37. ``last-child`` selects last child of container.
+38. ``last-of-type`` selects the same type element.
