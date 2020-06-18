@@ -43,3 +43,4 @@ use ```opacity: 0;``` ```visibility: hidden;``` instead.
 36. ``z-index`` only works with position specified.
 37. ``last-child`` selects last child of container.
 38. ``last-of-type`` selects the same type element.
+39. media queries should be written in ``em``s and not in ``rem``s.
