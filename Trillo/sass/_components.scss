@@ -15,6 +15,11 @@
     justify-content: center;
     align-items: center;
 
+    @media only screen and (max-width: $bp-smallest) {
+        order: 1;
+        flex: 0 0 100%;
+    }
+
     &__input{
         font-family: inherit;
         font-size: inherit;
@@ -139,11 +144,24 @@
     list-style: none;
     margin-top: 3.5rem;
 
+    @media only screen and (max-width: $bp-medium) {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+    }
+
     &__item{
         position: relative;
         
         &:not(:last-child){
             margin-bottom: .5rem;
+            @media only screen and (max-width: $bp-medium) {
+                margin-bottom: 0;
+            }
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            flex: 1;
         }
     }
     
@@ -153,8 +171,8 @@
         position: absolute;
         transform: scaleY(0);
         transition: transform .2s,
-                    width .4s cubic-bezier(1, 0, 0, 1),
-                    background-color .1s;
+        width .4s cubic-bezier(1, 0, 0, 1),
+        background-color .1s;
         top: 0;
         left: 0;
         height: 100%;
@@ -167,15 +185,15 @@
         transform: scaleY(1);
         width: 100%;
     }
-
+    
     &__item:active::before{
         background-color: var(--color-primary-light);
     }
-
+    
     &__link{
         z-index: 9;
         position: relative;
-
+        
         &:link,
         &:visited{
             color: var(--color-grey-light-1);
@@ -183,19 +201,35 @@
             text-transform: uppercase;
             display: block;
             padding: 1.5rem 3rem;
-
+            
             display: flex;
             align-items: center;
+            
+            @media only screen and (max-width: $bp-medium) {
+                justify-content: center;
+                padding: 2rem;
+            }
+
+            @media only screen and (max-width: $bp-small) {
+                flex-direction: column;
+                padding: 1.5rem .5rem;
+            }
+            
         }
     }
     
     &__icon{
         width: 1.7rem;
         height: 1.7rem;
-
+        
         margin-right: 2rem;
         fill: currentColor;
-
+        
+        @media only screen and (max-width: $bp-small) {
+            margin-right: 0;
+            width: 1.5rem;
+            height: 1.5rem;
+        }
     }
 }
 
@@ -207,6 +241,10 @@
     text-align: center;
     padding: 2.5rem;
     color: var(--color-grey-light-4);
+
+    @media only screen and (max-width: $bp-medium) {
+        display: none;
+    }
 }
 
 ///////////////////////////////////////////////////
@@ -236,6 +274,11 @@
         text-transform: uppercase;
         letter-spacing: 1px;
         padding: 1.5rem 3rem;
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 1.8rem;
+            padding: 1.25rem 2rem;
+        }
     }
     
     &__stars{
@@ -270,17 +313,29 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+
+        @media only screen and (max-width: $bp-small) {
+            padding: 0 1.5rem;
+        }
     }
     
     &__rating-average{
         font-size: 2.25rem;
         font-weight: 300;
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 1.8rem;
+        }
     }
     
     &__rating-count{
         font-size: .8rem;
         margin-top: -3px;
         text-transform: uppercase;
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: .5rem;
+        }
     }
 }
 
@@ -298,6 +353,10 @@
     display: inline-block;
     transition: all .2s;
     backface-visibility: hidden;
+
+    @media only screen and (max-width: $bp-small) {
+        // flex: 0 0 20%;
+    }
 
     & span{
         margin-left: 3px;
@@ -367,15 +426,18 @@
         margin-right: .7rem;
 
         // for older browsers
-        // background-image: url("../img/chevron-thin-right.svg");
-        // background-size: cover;
+        background-image: url("../img/chevron-thin-right.svg");
+        background-size: cover;
 
         // NEWER BROWSERS - MASKS
-        background-color: var(--color-primary);
-        -webkit-mask-image: url("../img/chevron-thin-right.svg");
-        -webkit-mask-size: cover;
-        mask-image: url("../img/chevron-thin-right.svg");
-        mask-size: cover;
+        @supports(-webkit-mask-image: url()){
+            background-color: var(--color-primary);
+            -webkit-mask-image: url("../img/chevron-thin-right.svg");
+            -webkit-mask-size: cover;
+            mask-image: url("../img/chevron-thin-right.svg");
+            mask-size: cover;
+            background-image: none;
+        }
     }
 }
 
@@ -397,7 +459,7 @@
     }
     
     &__friends{
-        
+        display: flex;
     }
     
     &__photo{
@@ -409,7 +471,7 @@
     }
     
     &__photo:not(:last-of-type){
-        margin-right: -1.5rem;
+        margin-right: -2rem;
     }
 }
 
@@ -421,11 +483,23 @@
 
     background-color: white;
     box-sizing: var(--shadow-light);
-    margin-bottom: 3rem;
+    margin-bottom: 3.5rem;
     padding: 3rem;
 
     overflow: hidden;
 
+    @media only screen and (max-width: $bp-medium) {
+        margin-bottom: 3rem;
+        padding: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        flex: 1 0 40%;
+
+        &:not(:last-of-type){
+            margin-right: 1rem;
+        }
+    }
 
     &__text{
         margin-bottom: 2rem;
@@ -487,6 +561,10 @@
 .cta{
     padding: 3.5rem 0;
     text-align: center;
+
+    @media only screen and (max-width: 900px) {
+        padding: 2.5rem 0;
+    }
     
     &__book-now{
         text-transform: uppercase;
