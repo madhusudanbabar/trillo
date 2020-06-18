@@ -44,6 +44,11 @@ $bp-small: 37.5em;      //600px  i.e 600/16
 $bp-smallest: 31.25em;      //500px  i.e 600/16
 
 
+::selection{
+    background-color: var(--color-primary-light);
+    color: white;
+}
+
 *,
 *::after,
 *::before{
