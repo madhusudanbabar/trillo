@@ -106,5 +106,9 @@
         flex-wrap: wrap;
         align-items: stretch;
         justify-content: center;
+
+        .u-fb-full{
+            flex: 1 1 100%;
+        }
     }
 }
