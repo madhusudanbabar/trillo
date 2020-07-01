@@ -44,3 +44,8 @@ use ```opacity: 0;``` ```visibility: hidden;``` instead.
 37. ``last-child`` selects last child of container.
 38. ``last-of-type`` selects the same type element.
 39. media queries should be written in ``em``s and not in ``rem``s.
+
+# Grid layout - Nexter project
+40. we can use line names in repeat function, like this, ``repeat(3, [col-start] 1fr [col-end] )`` which will create ``col-start 1`` to ``col-start 3`` same with ``col-end``.
+
+
